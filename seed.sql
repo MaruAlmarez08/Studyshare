@@ -1,10 +1,8 @@
--- Users
 INSERT INTO users (email, password, first_name, last_name)
 VALUES
 ('jillianealvarez@gmail.com', 'Jilliane123', 'Jilliane', 'Alvarez'),
 ('nashfedelin@gmail.com', 'Nash123', 'Nash', 'Fedelin');
 
--- Notes (20 entries) - student-made style
 INSERT INTO notes (user_id, subject_id, title, description, file_path)
 VALUES
 (1, 1, 'Simple Addition Tips', 'Some easy addition problems I practiced', 'uploads/math_addition_1.pdf'),
@@ -28,8 +26,6 @@ VALUES
 (2, 9, 'Art History Notes', 'From old paintings to modern art explained simply', 'uploads/art_1.pdf'),
 (2, 9, 'Painting Tips', 'Some painting techniques I tried and wrote down', 'uploads/art_2.pdf');
 
-VALUES
--- Quiz (20 entries) - Philippine subjects
 INSERT INTO quiz (quiz_title, user_id, reviewer_filename)
 VALUES
 ('Addition Quiz 1', 1, 'math_addition_1.pdf'),
@@ -53,7 +49,6 @@ VALUES
 ('Sining at Kultura Quiz', 2, 'art_1.pdf'),
 ('Pagpipinta at Disenyo Quiz', 2, 'art_2.pdf');
 
--- Quiz Results (20 entries)
 INSERT INTO quiz_results (quiz_id, user_id, score, total_questions)
 VALUES
 (1, 1, 9, 10),
@@ -77,10 +72,6 @@ VALUES
 (19, 2, 7, 10),
 (20, 2, 10, 10);
 
--- Questions (20 entries)
-INSERT INTO questions (quiz_id, question, choice_a, choice_b, choice_c, choice_d, correct)
-VALUES
--- Questions (20 easy, common-sense entries)
 INSERT INTO questions (quiz_id, question, choice_a, choice_b, choice_c, choice_d, correct)
 VALUES
 (1, '1 + 1 = ?', '1', '2', '3', '4', 'B'),
@@ -104,8 +95,6 @@ VALUES
 (2, 'Which is a number?', 'Apple', 'Five', 'Dog', 'Chair', 'B'),
 (2, 'How many months in a year?', '10', '11', '12', '13', 'C');
 
-
--- Ratings (20 entries)
 INSERT INTO ratings (user_id, note_id, rating_value)
 VALUES
 (1, 1, 5),
